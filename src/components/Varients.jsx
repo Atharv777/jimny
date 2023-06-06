@@ -65,6 +65,11 @@ const TopCont = styled.div`
         height: 62.5%;
         object-fit: contain;
         object-position: top;
+
+        @media only screen and (max-width: 600px) {
+            height: auto;
+            width: 90%;
+        }
     }
 `
 const BottomCont = styled.div`
