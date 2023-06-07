@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import Green from '../assets/img/Kinetic-Yellow-With-Bluish-Black-Roof.png';
+import Green from '../assets/img/Kinetic-Yellow.png';
 import White from "../assets/img/Pearl-Artic-White.png";
 import Red from '../assets/img/Sizzling-Red.png';
 import Black from "../assets/img/Granite-Grey.png";
