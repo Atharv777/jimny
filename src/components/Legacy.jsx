@@ -32,7 +32,7 @@ export default function Legacy() {
                 });
                 item.addEventListener('ended', (e) => {
                     document.body.classList.remove("noScroll")
-                    window.scrollBy({ top: 100, behavior: "smooth" })
+                    window.scrollBy({ top: window.innerHeight, behavior: "smooth" })
                 })
             })
 
