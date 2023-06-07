@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import Green from '../assets/img/Kinetic-yellow-with-bluish-black-roof.png';
+import Green from '../assets/img/Kinetic-Yellow-With-Bluish-Black-Roof.png';
 import White from "../assets/img/Pearl-Artic-White.png";
-import RedBlue from '../assets/img/Sizzling-Red-With-Bluish-Black-Roof.png';
+import Red from '../assets/img/Sizzling-Red.png';
 import Black from "../assets/img/Granite-Grey.png";
 import BlueBlack from "../assets/img/Bluish-Black.png";
-import Red from '../assets/img/Sizzling-Red.png';
 import Blue from "../assets/img/NEXA-Blue.png";
+import RedBlue from '../assets/img/Sizzling-Red-With-Bluish-Black-Roof.png';
 
 
 export default function Varients() {
 
-    const ColorArray = [Green, White, RedBlue, Black, BlueBlack, Red, Blue,]
+    const ColorArray = [Green, White, Red, Black, BlueBlack, Blue, RedBlue]
     const [currentInd, setCurrentInd] = useState(0);
 
 
@@ -89,11 +89,11 @@ const BottomCont = styled.div`
     
     & > div:nth-child(1){background-color: rgb(169, 176, 76)}
     & > div:nth-child(2){background-color: rgb(247, 249, 249)}
-    & > div:nth-child(3){background-color: rgb(183, 57, 44)}
+    & > div:nth-child(3){background-color: rgb(230, 41, 36);}
     & > div:nth-child(4){background-color: rgb(62, 64, 63)}
     & > div:nth-child(5){background-color: #000}
-    & > div:nth-child(6){background-color: rgb(230, 41, 36);}
-    & > div:nth-child(7){background-color: rgb(23, 61, 121)}
+    & > div:nth-child(6){background-color: rgb(23, 61, 121)}
+    & > div:nth-child(7){background-color: rgb(183, 57, 44)}
     
     div.active {
         border: 7px solid #fff;
