@@ -44,21 +44,21 @@ export default function BodySpecs() {
                     <h4 data-aos="fade-up" data-aos-delay="100">Ladder Frame Chassis</h4>
                     <p data-aos="fade-up" data-aos-delay="300">Every Jimny owes its off-roading prowess to the Ladder Frame structure. Now, it’s your turn to put it to the test. Pick your terrain. A thoroughbred off-roader, the torsional rigidity of this chassis instils confidence in the driver to master the toughest of topographies. While the full-width rigid axles in both the front and the rear, keeps you going like a mountain goat on the most impassable roads</p>
                 </div>
-                <img src={Chassis} alt="" />
+                <img draggable={false} src={Chassis} alt="" />
             </Slide>
             <Slide className='slide2'>
                 <div>
                     <h4>3-link Rigid Axle Suspension With Coil Spring</h4>
                     <p>The long-stroke 3-link suspension is teamed with full-width rigid axles in both the front and rear. This coupled with less variation in ground clearance and high tyre grounding force enables you to conquer the toughest of terrains. With the rigid axle suspension, when an obstacle pushes one wheel up, the axle presses the other down, to increase tyre contact in rough road conditions.</p>
                 </div>
-                <img src={Suspension} alt="" />
+                <img draggable={false} src={Suspension} alt="" />
             </Slide>
             <Slide className='slide3'>
                 <div>
                     <h4>Engine Performance</h4>
                     <p>When you are setting forth into the unknown, the responsive 1.5L K15B engine powers you through. Built for off-roading, it generates strong torque throughout a wide RPM range for unstoppable performance.</p>
                 </div>
-                <img src={Engine} alt="" />
+                <img draggable={false} src={Engine} alt="" />
             </Slide>
         </Container>
     )
@@ -82,7 +82,6 @@ const Container = styled.div`
     }
 `
 const Slide = styled.div`
-    /* height: 100vh; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;

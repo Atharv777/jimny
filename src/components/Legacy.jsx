@@ -15,7 +15,6 @@ export default function Legacy() {
     useEffect(() => {
         let ctx = gsap.context(() => {
 
-            // const video = document.querySelectorAll("video")
             const video = gsap.utils.toArray("video")
 
             video.forEach((item) => {
@@ -112,7 +111,7 @@ const Cont = styled.div`
     }
 `
 
-const TextCont = styled.p`
+const TextCont = styled.div`
     position: absolute;
     top: 50%;
     left: 50px;

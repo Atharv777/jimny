@@ -15,7 +15,6 @@ export default function Varients() {
     const ColorArray = [Green, White, Red, Black, BlueBlack, Blue, RedBlue]
     const [currentInd, setCurrentInd] = useState(0);
 
-
     return (
         <Container>
             <TopCont>
@@ -23,13 +22,13 @@ export default function Varients() {
                 <img src={ColorArray[currentInd]} alt="" />
             </TopCont>
             <BottomCont>
-                <div className={currentInd === 0 && "active"} onClick={() => setCurrentInd(0)} title='Kinetic Yellow With Bluish Black Roof'></div>
-                <div className={currentInd === 1 && "active"} onClick={() => setCurrentInd(1)} title='Pearl Artic White'></div>
-                <div className={currentInd === 2 && "active"} onClick={() => setCurrentInd(2)} title='Sizzling Red With Bluish Black Roof'></div>
-                <div className={currentInd === 3 && "active"} onClick={() => setCurrentInd(3)} title='Granite Grey'></div>
-                <div className={currentInd === 4 && "active"} onClick={() => setCurrentInd(4)} title='Bluish Black'></div>
-                <div className={currentInd === 5 && "active"} onClick={() => setCurrentInd(5)} title='Sizzling Red'></div>
-                <div className={currentInd === 6 && "active"} onClick={() => setCurrentInd(6)} title='NEXA Blue'></div>
+                <div className={currentInd === 0 ? "active" : undefined} onClick={() => setCurrentInd(0)} title='Kinetic Yellow With Bluish Black Roof'></div>
+                <div className={currentInd === 1 ? "active" : undefined} onClick={() => setCurrentInd(1)} title='Pearl Artic White'></div>
+                <div className={currentInd === 2 ? "active" : undefined} onClick={() => setCurrentInd(2)} title='Sizzling Red With Bluish Black Roof'></div>
+                <div className={currentInd === 3 ? "active" : undefined} onClick={() => setCurrentInd(3)} title='Granite Grey'></div>
+                <div className={currentInd === 4 ? "active" : undefined} onClick={() => setCurrentInd(4)} title='Bluish Black'></div>
+                <div className={currentInd === 5 ? "active" : undefined} onClick={() => setCurrentInd(5)} title='Sizzling Red'></div>
+                <div className={currentInd === 6 ? "active" : undefined} onClick={() => setCurrentInd(6)} title='NEXA Blue'></div>
             </BottomCont>
         </Container>
     )

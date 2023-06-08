@@ -61,7 +61,6 @@ body.noScroll {
 * {
   margin: 0;
   padding: 0;
-  /* max-width: 100% !important; */
   box-sizing: border-box !important;
 }
 
@@ -70,8 +69,6 @@ body.noScroll {
     opacity: 0;
   }
   to {
-    /* max-height: 1000px;
-    height: auto; */
     opacity: 1;
   }
 }

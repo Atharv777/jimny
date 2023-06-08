@@ -8,19 +8,25 @@ import BodySpecs from "./components/BodySpecs";
 import Legacy from "./components/Legacy";
 import Safety from "./components/Safety";
 import Varients from "./components/Varients";
-// import BodySpecs from "./components/BodySpecsTrash";
+import DesignExterior from "./components/DesignExterior";
+import DesignInterior from "./components/DesignInterior";
+import Footer from "./components/Footer";
 
 
 function App() {
+
     return (
         <MainCont>
-            {/* <Viewer3d /> */}
             <Header />
             <Hero />
             <BodySpecs />
             <Legacy />
+            <Viewer3d />
+            <DesignExterior />
+            <DesignInterior />
             <Safety />
             <Varients />
+            <Footer />
         </MainCont>
     );
 }

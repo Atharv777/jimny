@@ -16,23 +16,27 @@ export default function Hero() {
                 <HeroImg src={JimnyCar} alt="" />
             </TopCont>
             <BottomCont>
-                <div data-aos="fade-up" data-aos-delay="100">
+                <SpecialBottomDiv data-aos="fade-up" data-aos-delay="100">
+                    <p><span>Starting at</span> ₹12,74,000</p>
+                    <p>* Ex-Showroom Price</p>
+                </SpecialBottomDiv>
+                <div data-aos="fade-up" data-aos-delay="150">
                     <p>1462 cc</p>
                     <p>Engine Capacity</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="150">
+                <div data-aos="fade-up" data-aos-delay="200">
                     <p>103.39 bph</p>
                     <p>Max Power</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="200">
+                <div data-aos="fade-up" data-aos-delay="250">
                     <p>134.2Nm</p>
                     <p>Max Torque</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="250">
+                <div data-aos="fade-up" data-aos-delay="300">
                     <p>AWD</p>
                     <p>Drive type</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="300">
+                <div data-aos="fade-up" data-aos-delay="350">
                     <p>Petrol</p>
                     <p>Fuel Type</p>
                 </div>
@@ -166,5 +170,22 @@ const BottomCont = styled.div`
         & > div > p:nth-child(2) {
             font-size: 10px;
         }
+    }
+`
+
+const SpecialBottomDiv = styled.div`
+    gap: 5px;
+    & > p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    & span {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 125%;
+        color: rgba(255, 255, 255, 0.45);
     }
 `
