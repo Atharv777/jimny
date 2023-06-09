@@ -84,11 +84,12 @@ export default function DesignExterior() {
 }
 
 const Container = styled.div`
-    overscroll-behavior: none;
-    width: 600%;
-    height: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    height: 100vh;
     display: flex;
     flex-wrap: nowrap;
+    position: relative;
 
     & > div {
         position: relative;
